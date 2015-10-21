@@ -3,10 +3,7 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
-    var userName = prompt("What is your name puny human?");
-
     var userChoice = prompt("Do you choose rock, paper or scissors?");
-
     var computerChoice = Math.random();
 
     if (computerChoice <= 0.33) {
@@ -44,12 +41,12 @@
               }
           }
       };
+
     </script>
   </head>
   <body>
     <div class="wrapper">
       <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
-      
     </div>
   </body>
 

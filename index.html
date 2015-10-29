@@ -8,12 +8,22 @@
       window.alert(userName + " wins with " + userChoice+"!");
     }
 
+    var showResults = function(winSel,userChoice, userName, computerChoice) {
+      var winner = (winSel ? userName:"computer");
+      window.alert(winner + " wins!\n" +
+        userName + " = " + userChoice + "\n" +
+        "computer = " + computerChoice);
+    }
+
     var compare = function() {
 
       var userName = prompt("Enter your name:");
       var userChoice = prompt("Do you choose rock, paper or scissors?");
-      while (userChoice !== "rock" && userChoice !== "scissors" && userChoice !== "paper") {
-        var userChoice = prompt("Do you choose rock, paper or scissors?");
+      var userChoiceLC = userChoice.toLowerCase();
+
+      while (userChoiceLC !== "rock" && userChoiceLC !== "scissors" && userChoiceLC !== "paper") {
+        userChoice = prompt("Do you choose rock, paper or scissors?");
+        userChoiceLC = userChoice.toLowerCase();
       }
       var computerChoice = Math.random();
 
@@ -25,46 +35,45 @@
           computerChoice = "scissors";
       }
 
-
-      if (userName === "jared") {
+      if (userName.toLowerCase() === "jared") {
         jaredWins(userChoice,userName);
       }
       else {
-        if (userChoice  === computerChoice) {
-              window.alert("The result is a tie!");
-          } else if(userChoice ==="rock") {
-            if (computerChoice==="scissors") {
-
-                window.alert(userName + " wins with Rock!");
-          } else {
-                window.alert("Paper wins");
-              }
+        if (userChoiceLC  === computerChoice) {
+          window.alert("The result is a tie!");
+        }
+        else if(userChoiceLC ==="rock") {
+          if (computerChoice==="scissors") {
+            showResults(1,userChoice,userName,computerChoice);
+          } 
+          else {
+            showResults(0,userChoice,userName,computerChoice);
           }
-          else if(userChoice==="paper") {
-             if(computerChoice ==="rock") {
-                 window.alert(userName + " wins with paper!");
-             } else {
-                 window.alert("scissors wins!");
-             }
+        }
+        else if(userChoiceLC==="paper") {
+          if(computerChoice ==="rock") {
+            showResults(1,userChoice,userName,computerChoice);
           }
-
-          else if(userChoice==="scissors") {
-              if (computerChoice==="rock") {
-                  window.alert(userName + " wins with Scissors!");
-              } else {
-                  window.alert("scissors wins");
-              }
+          else {
+            showResults(0,userChoice,userName,computerChoice);
           }
-        }  
-      };
+        }
+        else if(userChoiceLC==="scissors") {
+          if (computerChoice==="paper") {
+            showResults(1,userChoice,userName,computerChoice);
+          }
+          else {
+            showResults(0,userChoice,userName,computerChoice);
+          }
+        }
+      }  
+    }; // end compare function
 
     </script>
   </head>
   <body>
     <div class="wrapper">
       <button class="button1" onclick="compare();">LETS PLAY RPS!</button>
-      <!-- <button class="button1" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button> -->
-      <!-- <button class="button2" onclick="location.reload();">LETS PLAY RPS AGAIN!</button> -->
     </div>
   </body>
 

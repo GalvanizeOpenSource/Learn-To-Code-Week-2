@@ -3,31 +3,46 @@
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
-    var userChoice = prompt("Do you choose rock, paper or scissors?");
-    var computerChoice = Math.random();
 
-    if (computerChoice <= 0.33) {
-        computerChoice = "rock";
-    } else if (computerChoice <= 0.66) {
-        computerChoice = "paper";
-    } else {
-        computerChoice = "scissors";
+    var jaredWins = function(userChoice,userName) {
+      window.alert(userName + " wins with " + userChoice+"!");
     }
 
-    var compare = function(userChoice, computerChoice) {
+    var compare = function() {
+
+      var userName = prompt("Enter your name:");
+      var userChoice = prompt("Do you choose rock, paper or scissors?");
+      while (userChoice !== "rock" && userChoice !== "scissors" && userChoice !== "paper") {
+        var userChoice = prompt("Do you choose rock, paper or scissors?");
+      }
+      var computerChoice = Math.random();
+
+      if (computerChoice <= 0.33) {
+          computerChoice = "rock";
+      } else if (computerChoice <= 0.66) {
+          computerChoice = "paper";
+      } else {
+          computerChoice = "scissors";
+      }
+
+
+      if (userName === "jared") {
+        jaredWins(userChoice,userName);
+      }
+      else {
         if (userChoice  === computerChoice) {
               window.alert("The result is a tie!");
           } else if(userChoice ==="rock") {
             if (computerChoice==="scissors") {
 
-                window.alert("Rock wins!");
+                window.alert(userName + " wins with Rock!");
           } else {
                 window.alert("Paper wins");
               }
           }
           else if(userChoice==="paper") {
              if(computerChoice ==="rock") {
-                 window.alert("Paper wins!");
+                 window.alert(userName + " wins with paper!");
              } else {
                  window.alert("scissors wins!");
              }
@@ -35,18 +50,21 @@
 
           else if(userChoice==="scissors") {
               if (computerChoice==="rock") {
-                  window.alert("Scissors wins!");
+                  window.alert(userName + " wins with Scissors!");
               } else {
                   window.alert("scissors wins");
               }
           }
+        }  
       };
 
     </script>
   </head>
   <body>
     <div class="wrapper">
-      <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
+      <button class="button1" onclick="compare();">LETS PLAY RPS!</button>
+      <!-- <button class="button1" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button> -->
+      <!-- <button class="button2" onclick="location.reload();">LETS PLAY RPS AGAIN!</button> -->
     </div>
   </body>
 

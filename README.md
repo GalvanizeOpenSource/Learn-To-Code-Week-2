@@ -40,7 +40,9 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 This line creates a variable called ```userChoice``` to represent the users response.
 
-Question: Why is this a crap way to get the users input?
+Question 1: Why is this a terrible way to get the users input?
+Question 2: What are some ways you could avoid this problem?
+
 
 ###2.Get the computers choice
 ```Math.random()``` returns a random floating point number between 0 and 1
@@ -50,6 +52,9 @@ var computerChoice = Math.random();
 ```
 
 Here we are setting a variable named ```computerChoice``` to the result of Math.random()
+
+Question: If you did't want to have ```Math.Random()``` choose between 0 & 1 how could you give it
+alternative Parameters?
 
 
 ###3. Teach the computer rock, paper, scissors.
@@ -77,11 +82,13 @@ if (computerChoice <= 0.33) {
 //Not so fast bub, first we need to tell the computer how to decide who wins. In
 //order to do that we're going to need to create a function!
 
+Question: If the computers choice is ```0.44``` why does this statement assign ```computerChoice```
+not evaluate to paper? Afterall, ```0.44``` is less than or equal to ```0.66``` afterall
 
 
 ###4. Compare the choices and tell the user of the result.
 Here we're creating a function called ```compare```. The ```compare``` function takes two
-arguments ```choice1``` and ```choice2```.
+arguments ```userChoice``` and ```computerChoice```.
 
 ```javascript
 var compare = function(userChoice, computerChoice) {
@@ -109,6 +116,15 @@ var compare = function(userChoice, computerChoice) {
 };
 ```
 
+Question: At this point in the program we've got the userChoice and computerChoice, we've also
+written a function that compares the two, what is the last thing we have to do to make this program
+run?
+
+
+
+
+
+
 
 ###5. Calling the compare function
  We're passing values of userChoice and computerChoice to run the equation. The
@@ -125,6 +141,9 @@ var compare = function(userChoice, computerChoice) {
 - "When I win I want the game to congratulate me by name!"
 
 - "I don't ever want to loose, make it so I always win."
+
+- "I don't want to have to click a button to play, make it so ```compare``` just runs when I enter
+my choice"
 
 
 ###9. Save, Commit, Push!

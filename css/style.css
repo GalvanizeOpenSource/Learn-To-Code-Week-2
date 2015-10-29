@@ -12,9 +12,10 @@
 
 
 html {
-  background: url("some_url_to_an_image") no-repeat center center fixed; 
+  background: url("http://fashionablygeek.com/wp-content/uploads/2010/07/Rock_Paper_Scissor_Hold.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }

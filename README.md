@@ -10,9 +10,7 @@ using  JavaScript and jQuery. With CSS and HTML
 
 
 ###Rock Paper Scissors!
-
-We want to write a program called rockPaperScissors.js so we can play rock paper
-scissors with our computer! Here are the steps we'll need to take to make that happen:
+One can play rock paper scissors with our computer! Here are the steps we'll need to take to make that happen:
 
 1. Get a user's choice
 2. Get the computer's choice
@@ -42,7 +40,7 @@ var computerChoice = Math.random();
 Here we are setting a variable named ```computerChoice``` to the result of Math.random()
 
 
-###3. Teach the computer rock, paper, scissors.
+###3. Assigning computer rock, paper, scissors values.
 
 This is our first conditional statement. We change the value of ```computerChoice```
 to either rock, paper, or scissors depending on what number the ```computerChoice```
@@ -64,12 +62,12 @@ if (computerChoice <= 0.33) {
 
 //At this point the computer is ready to rumble with it's choice, and the user
 //has made theirs. IT'S GO TIME!!!
-//Not so fast bub, first we need to tell the computer how to decide who wins. In
+//We now need to tell the computer how to decide who wins. In
 //order to do that we're going to need to create a function!
 
 
 
-###4. Compare the choices and tell the user of the result.
+###4. Using comparison to decide the winner!.
 Here we're creating a function called ```compare```. The ```compare``` function takes two
 arguments ```choice1``` and ```choice2```.
 
@@ -108,14 +106,4 @@ var compare = function(userChoice, computerChoice) {
 <button class="button" onclick="compare(userChoice, computerChoice);">LETS PLAY RPS!</button>
 ```
 
-###6. The customer has some requests
-
-- "I want to play the game again, make a button I can press to play again!"
-
-- "When I win I want the game to congratulate me by name!"
-
-- "I don't ever want to loose, make it so I always win."
-
-
-###9. Save, Commit, Push!
-Save your changes, make a commit and push your local changes to github!
+Enjoy the game!!

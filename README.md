@@ -6,7 +6,7 @@ In order to go over some basic JavaScript concepts lets follow the getting
 started tutorial provided by the JavaScript team. It's only 8 lessons and
 takes less than 5 minutes.
 
-Please email if you are doing this at home and have any quesions!
+Please email if you are doing this at home and have any questions!
 
 mcbain@galvanize.com
 

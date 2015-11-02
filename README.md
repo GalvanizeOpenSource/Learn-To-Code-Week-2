@@ -40,8 +40,11 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 This line creates a variable called ```userChoice``` to represent the users response.
 
-Question 1: Why is this a terrible way to get the users input?
-Question 2: What are some ways you could avoid this problem?
+####Question:
+Why is this a terrible way to get the users input?
+
+####Question:
+What are some ways you could avoid this problem?
 
 
 ###2.Get the computers choice
@@ -53,7 +56,8 @@ var computerChoice = Math.random();
 
 Here we are setting a variable named ```computerChoice``` to the result of Math.random()
 
-Question: If you did't want to have ```Math.Random()``` choose between 0 & 1 how could you give it
+####Question:
+If you did't want to have ```Math.Random()``` choose between 0 & 1 how could you give it
 alternative Parameters?
 
 
@@ -82,8 +86,9 @@ if (computerChoice <= 0.33) {
 //Not so fast bub, first we need to tell the computer how to decide who wins. In
 //order to do that we're going to need to create a function!
 
-Question: If the computers choice is ```0.44``` why does this statement assign ```computerChoice```
-not evaluate to paper? Afterall, ```0.44``` is less than or equal to ```0.66``` afterall
+####Question:
+If the computers choice is ```0.44``` why does this statement assign ```computerChoice```
+not evaluate to paper? Afterall, ```0.44``` is less than or equal to ```0.66```
 
 
 ###4. Compare the choices and tell the user of the result.
@@ -116,7 +121,8 @@ var compare = function(userChoice, computerChoice) {
 };
 ```
 
-Question: At this point in the program we've got the userChoice and computerChoice, we've also
+####Question:
+At this point in the program we've got the userChoice and computerChoice, we've also
 written a function that compares the two, what is the last thing we have to do to make this program
 run?
 
@@ -146,5 +152,14 @@ run?
 my choice"
 
 
-###9. Save, Commit, Push!
+###7. Save, Commit, Push!
 Save your changes, make a commit and push your local changes to github!
+
+
+
+###8. Why I made you learn github
+[TeleScope](http://www.telescopeapp.org)
+- [ProductHunt](https://www.producthunt.com/) was built on Telescope.
+
+[ShareTribe](https://www.sharetribe.com/)
+- Costs money if you don't know how to code, but since you do it's free! 

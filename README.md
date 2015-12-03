@@ -98,24 +98,24 @@ arguments ```userChoice``` and ```computerChoice```.
 ```javascript
 var compare = function(userChoice, computerChoice) {
     if (userChoice  === computerChoice) {
-        window.alert("The result is a tie!");
+        alert("The result is a tie!");
     } else if(userChoice === "rock") {
         if (computerChoice === "scissors") {
-            window.alert("Rock wins!");
+            alert("Rock wins!");
         } else {
-            window.alert("Paper wins");
+            alert("Paper wins");
         }
     } else if(userChoice === "paper") {
         if(computerChoice === "rock") {
-            window.alert("paper wins!");
+            alert("paper wins!");
         } else {
-            window.alert("scissors wins!");
+            alert("scissors wins!");
         }
     } else if(userChoice === "scissors") {
         if (computerChoice === "rock") {
-            window.alert("Rock wins");
+            alert("Rock wins");
         } else {
-            window.alert("scissors wins");
+            alert("scissors wins");
         }
     }
 };

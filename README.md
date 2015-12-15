@@ -1,23 +1,19 @@
-# Learn-to-code-week-2
+# learn-to-code-week-2
+During this workshop, you learn enough JavaScript to build a simple version of [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock-paper-scissors). Yes, this is a game involving (wo)man vs machine! [John Connor](https://en.wikipedia.org/wiki/John_Connor) is on your side; I can't say the same for [Arnold](https://en.wikipedia.org/wiki/Terminator_\(character\)).
 
-Basic JavaScript and jQuery
+To build your game, you'll need to complete these three steps:
 
-In order to go over some basic JavaScript concepts lets follow the getting
-started tutorial provided by the JavaScript team. It's only 8 lessons and
-takes less than 5 minutes.
+1. Understand the purpose of JavaScript?
+2. Learn enough JavaScript to build Rock, Paper, Scissors.
+3. Define and complete the tasks for building our game.
 
-Please email if you are doing this at home and have any quesions!
-
-mcbain@galvanize.com
+If you are doing this work at home and have any quesions, please contact [Graham McBain](mcbain@galvanize.com).
 
 ###HOORAY VOCABULARY!
 
 - functions
 - if statements
 - variables
-
-
-
 
 ###Rock Paper Scissors!
 

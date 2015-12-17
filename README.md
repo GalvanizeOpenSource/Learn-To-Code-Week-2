@@ -122,12 +122,6 @@ At this point in the program we've got the userChoice and computerChoice, we've 
 written a function that compares the two, what is the last thing we have to do to make this program
 run?
 
-
-
-
-
-
-
 ###5. Calling the compare function
  We're passing values of userChoice and computerChoice to run the equation. The
  function is called when someone clicks the button via the ```onclick``` attribute!
@@ -147,15 +141,4 @@ run?
 - "I don't want to have to click a button to play, make it so ```compare``` just runs when I enter
 my choice"
 
-
-###7. Save, Commit, Push!
-Save your changes, make a commit and push your local changes to github!
-
-
-
-###8. Why I made you learn github
-[TeleScope](http://www.telescopeapp.org)
-- [ProductHunt](https://www.producthunt.com/) was built on Telescope.
-
-[ShareTribe](https://www.sharetribe.com/)
-- Costs money if you don't know how to code, but since you do it's free! 
+### [MIT Licensed](LICENSE)
